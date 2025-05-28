@@ -10,3 +10,18 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+# Notes:
+gh-pages is installed **locally**, and therefore cannot be called directly in the CLI.
+Instead, use ```npx gh-pages ${COMMAND}```
+
+The ```predeploy``` script *should* run before the ```deploy``` script. \
+This works on:
+- [x] Windows
+- [] Kubuntu (Untested)
+
+Vite needs a ```base``` set in ```vite-config.js```. 
+Since this is a project page  deploying to ```https://Anton-Pan.github.io/CMPT-276-Mini-Project/```) ```base``` should be set to ```/CMPT-276-Mini-Project/```.
+
