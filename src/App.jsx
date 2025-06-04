@@ -12,6 +12,7 @@ function App() {
                         CMPT 276 Mini-Project
                     </h5>
                 </header>
+                <div style={{paddingLeft: "2rem",borderRight: "thick solid #334155"}}/>
                 <div style={{
                     flex: 1,
                     display: "flex",
