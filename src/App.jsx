@@ -1,13 +1,18 @@
 import './App.css'
 
 function App() {
+    const Header = () => {
+        return (
+            <section style={{display: "flex"}}>
 
+            </section>
+        )
+    }
+    return (<>
+        <Header>
 
-  return (
-    <>
-        204: No Content
-    </>
-  )
+        </Header>
+    </>)
 }
 
 export default App
