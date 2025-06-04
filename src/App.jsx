@@ -12,8 +12,23 @@ function App() {
                         CMPT 276 Mini-Project
                     </h5>
                 </header>
-
-
+                <div style={{
+                    flex: 1,
+                    display: "flex",
+                    width: "100%",
+                    alignItems: "center",
+                    justifyContent: "space-evenly"
+                }}>
+                    <button>
+                        Biography
+                    </button>
+                    <button>
+                        Projects
+                    </button>
+                    <button>
+                        Photography
+                    </button>
+                </div>
             </section>
         )
     }
