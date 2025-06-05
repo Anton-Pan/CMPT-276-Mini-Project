@@ -141,9 +141,14 @@ function App() {
     }
 
     const Footer = () => {
+
+
+
         return (
             <section style={{display: "flex", alignItems: "center", justifyContent: "space-around"}}>
-
+                <h5>
+                    © 2025 Anton-Pan (MIT License)
+                </h5>
             </section>
         )
     }
