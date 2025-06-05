@@ -175,14 +175,30 @@ function App() {
         }
         return (
             <section style={{display: "flex", alignItems: "center", justifyContent: "space-around"}}>
-                <h5>
+                <a style={{pointerEvents: "none"}}>
                     © 2025 Anton-Pan (MIT License)
-                </h5>
-                <h5>
-                    {"Today is: " + getTodaysDate()}
-                </h5>
+                </a>
+                <a style={{pointerEvents: "none"}}>
+                    {getTodaysDate()}
+                    </a>
+                    <div style={{
+                        display: "grid",
+                        gridTemplateColumns: "1fr 1fr 1fr",
+                        alignItems: "center",
+                        justifyContent: "space-between"
+                    }}>
+                        <div style={{display: "flex", width: "100%", justifyContent: "end"}}>
+                            <a href={"https://github.com/Anton-Pan"}>Github</a>
+                        </div>
+                        <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
+                            <a href="mailto:anton_panfilenok@sfu.ca">Email</a>
+                        </div>
+                        <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
+                            <a href="https://www.linkedin.com/in/anton-panf/">Linkedin</a>
+                        </div>
+                    </div>
             </section>
-        )
+    )
     }
     return (
         <>
@@ -190,6 +206,6 @@ function App() {
             <Footer/>
         </>
     )
-}
+    }
 
-export default App
+    export default App
