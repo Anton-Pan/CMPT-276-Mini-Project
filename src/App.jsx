@@ -141,13 +141,45 @@ function App() {
     }
 
     const Footer = () => {
-
-
-
+        const getTodaysDate = () => {
+            const parseMonth = (month) => {
+                switch (month) {
+                    case 0:
+                        return "January";
+                    case 1:
+                        return "February";
+                    case 2:
+                        return "March";
+                    case 3:
+                        return "April";
+                    case 4:
+                        return "May";
+                    case 5:
+                        return "June";
+                    case 6:
+                        return "July";
+                    case 7:
+                        return "August";
+                    case 8:
+                        return "September";
+                    case 9:
+                        return "October";
+                    case 10:
+                        return "November";
+                    case 11:
+                        return "December";
+                }
+            }
+            const currentDate = new Date;
+            return (`${parseMonth(currentDate.getMonth())} ${currentDate.getDate()}, ${currentDate.getFullYear()}`)
+        }
         return (
             <section style={{display: "flex", alignItems: "center", justifyContent: "space-around"}}>
                 <h5>
                     © 2025 Anton-Pan (MIT License)
+                </h5>
+                <h5>
+                    {"Today is: " + getTodaysDate()}
                 </h5>
             </section>
         )
