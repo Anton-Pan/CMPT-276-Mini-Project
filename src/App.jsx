@@ -118,13 +118,13 @@ function App() {
                     alignItems: "center",
                     justifyContent: "space-evenly"
                 }}>
-                    <button>
+                    <button onClick={() => document.getElementById("Biography").scrollIntoView({behavior: 'smooth'})}>
                         Biography
                     </button>
-                    <button>
+                    <button onClick={() => document.getElementById("Projects").scrollIntoView({behavior: 'smooth'})}>
                         Projects
                     </button>
-                    <button>
+                    <button onClick={() => document.getElementById("Photography").scrollIntoView({behavior: 'smooth'})}>
                         Photography
                     </button>
                 </div>
@@ -139,7 +139,6 @@ function App() {
             </section>
         )
     }
-
     const Footer = () => {
         const getTodaysDate = () => {
             const parseMonth = (month) => {
@@ -180,32 +179,33 @@ function App() {
                 </a>
                 <a style={{pointerEvents: "none"}}>
                     {getTodaysDate()}
-                    </a>
-                    <div style={{
-                        display: "grid",
-                        gridTemplateColumns: "1fr 1fr 1fr",
-                        alignItems: "center",
-                        justifyContent: "space-between"
-                    }}>
-                        <div style={{display: "flex", width: "100%", justifyContent: "end"}}>
-                            <a href={"https://github.com/Anton-Pan"}>Github</a>
-                        </div>
-                        <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
-                            <a href="mailto:anton_panfilenok@sfu.ca">Email</a>
-                        </div>
-                        <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
-                            <a href="https://www.linkedin.com/in/anton-panf/">Linkedin</a>
-                        </div>
+                </a>
+                <div style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr 1fr",
+                    alignItems: "center",
+                    justifyContent: "space-between"
+                }}>
+                    <div style={{display: "flex", width: "100%", justifyContent: "end"}}>
+                        <a href={"https://github.com/Anton-Pan"}>Github</a>
                     </div>
+                    <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
+                        <a href="mailto:anton_panfilenok@sfu.ca">Email</a>
+                    </div>
+                    <div style={{display: "flex", width: "100%", justifyContent: "center"}}>
+                        <a href="https://www.linkedin.com/in/anton-panf/">Linkedin</a>
+                    </div>
+                </div>
             </section>
-    )
+        )
     }
+
     return (
         <>
             <Header/>
             <Footer/>
         </>
     )
-    }
+}
 
-    export default App
+export default App
