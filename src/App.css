@@ -362,7 +362,7 @@ label {
 }
 
 button, input[type=button], input[type=reset], input[type=submit] {
-	min-width:     100px;
+	min-width:     200px;
 	display:       inline-block;
 	padding:       calc(var(--spacing-base) * .75) var(--spacing-base);
 	background:    var(--gradient-primary);
