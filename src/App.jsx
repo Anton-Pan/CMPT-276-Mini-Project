@@ -1,5 +1,8 @@
 import './App.css'
 import './darkModeToggleSwitch.css'
+import selfPhoto from "./assets/headshot.jpeg"
+import project1Photo from "./assets/project1.png"
+import project2Photo from "./assets/project2.png"
 
 function App() {
     const Header = () => {
@@ -158,8 +161,90 @@ function App() {
                 </section>
             </div>)
         }
+
+        const Projects = () => {
+            return (<div>
+                <h6 style={{paddingLeft: "1rem"}} id="Projects">Projects</h6>
+                <section style={{
+                    display: "grid",
+                    gridTemplateColumns: "2fr 5fr",
+                    alignItems: "center",
+                    justifyContent: "space-between"
+                }}>
+                    <figure style={{marginRight: "2rem", marginBottom: "0rem"}}>
+                        <img src={project1Photo} alt={"A picture of me"}/>
+                    </figure>
+                    <section style={{marginBottom: 0}}>
+                        <h6>Ticketrebel</h6>
+                        <p style={{marginBottom: 0}}>
+                            I am currently working on developing a concert ticketing website dedicated to
+                            small-scale
+                            local events, such as punk shows & art fairs. <br/>
+                            At the moment, my tech stack is made up of: <br/>
+                            <div style={{
+                                paddingTop: "1rem",
+                                display: "grid",
+                                gridTemplateColumns: "1fr 1fr 1fr",
+                                alignItems: "center",
+                                justifyContent: "space-between",
+                                columnGap: "0.5rem",
+                                rowGap: "0.5rem"
+                            }}>
+                                <pre style={{marginBottom: 0}}><a
+                                    href="https://www.npmjs.com/package/react">React</a></pre>
+                                <pre style={{marginBottom: 0}}><a
+                                    href="https://www.npmjs.com/package/mui">Material UI</a></pre>
+                                <pre style={{marginBottom: 0}}><a href="https://www.npmjs.com/package/koa">Koa</a></pre>
+                                <pre style={{marginBottom: 0}}><a href="https://www.npmjs.com/package/ajv">AJV</a></pre>
+                                <pre style={{marginBottom: 0}}><a
+                                    href="https://www.npmjs.com/package/swagger-ui">Swagger/OAS3</a></pre>
+                                <pre style={{marginBottom: 0}}><a href="https://www.npmjs.com/package/stripe">Stripe</a></pre>
+                            </div>
+                        </p>
+                    </section>
+                </section>
+                <section style={{
+                    display: "grid",
+                    gridTemplateColumns: "2fr 5fr",
+                    alignItems: "center",
+                    justifyContent: "space-between"
+                }}>
+                    <figure style={{marginRight: "2rem", marginBottom: "0rem"}}>
+                        <img src={project2Photo} alt={"A picture of me"}/>
+                    </figure>
+                    <section style={{marginBottom: 0}}>
+                        <h6>LastMinuteMassage</h6>
+                        <p style={{marginBottom: 0}}>
+                            This is one of my favorite past projects - a website that aggregated data on
+                            local massage parlors, such as prices, availability times, and massage types, for ease of
+                            comparison for users. <br/>
+                            The tech stack was: <br/>
+                            <div style={{
+                                paddingTop: "1rem",
+                                display: "grid",
+                                gridTemplateColumns: "1fr 1fr",
+                                alignItems: "center",
+                                justifyContent: "space-between",
+                                columnGap: "0.5rem",
+                                rowGap: "0.5rem"
+                            }}>
+                                <pre style={{marginBottom: 0}}><a
+                                    href="https://www.npmjs.com/package/selenium-webdriver">Selenium</a></pre>
+                                <pre style={{marginBottom: 0}}><a
+                                    href={"https://www.npmjs.com/package/@nestjs/core"}>NestJS</a></pre>
+                                <pre style={{marginBottom: 0}}><a
+                                    href={"https://www.npmjs.com/package/tailwindcss"}>TailwindCSS</a></pre>
+                                <pre style={{marginBottom: 0}}><a style={{pointerEvents: "none"}}>JaneApp API</a></pre>
+                            </div>
+                        </p>
+                    </section>
+                </section>
+            </div>)
+        }
+
         return (<>
             <Biography/>
+            <Projects/>
         </>)
     }
 
