@@ -3,6 +3,11 @@ import './darkModeToggleSwitch.css'
 import selfPhoto from "./assets/headshot.jpeg"
 import project1Photo from "./assets/project1.png"
 import project2Photo from "./assets/project2.png"
+import bridgePhoto from "./assets/snowy-bridge-at-night.jpeg"
+import fieldPhoto from "./assets/snowy-field.jpeg"
+import balconiesPhoto from "./assets/sunset-and-balconies.jpeg"
+import trainyardPhoto from "./assets/trainyard.jpeg"
+
 
 function App() {
     const Header = () => {
@@ -242,9 +247,40 @@ function App() {
             </div>)
         }
 
+        const Photography = () => {
+            return (<div>
+                <h6 style={{paddingLeft: "1rem"}} id="Photography">Photography</h6>
+                <section style={{
+                    display: "grid",
+                    gridTemplateColumns: "1fr 1fr",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    columnGap: "1rem",
+                }}>
+                    <div>
+                        <figure>
+                            <img src={bridgePhoto} alt={"A picture of a bridge during a snowstorm"}/>
+                        </figure>
+                        <figure style={{paddingTop: "1rem"}}>
+                            <img src={fieldPhoto} alt={"A picture of a field covered in snow"}/>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure style={{marginBottom: 0}}>
+                            <img src={balconiesPhoto} alt={"A photo of some balconies during sunset"}/>
+                        </figure>
+                        <figure style={{marginBottom: 0, paddingTop: "1rem"}}>
+                            <img src={trainyardPhoto} alt={"A photo of a trainyard at night"}/>
+                        </figure>
+                    </div>
+                </section>
+            </div>)
+        }
+
         return (<>
             <Biography/>
             <Projects/>
+            <Photography/>
         </>)
     }
 
