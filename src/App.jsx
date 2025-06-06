@@ -258,10 +258,10 @@ function App() {
                     columnGap: "1rem",
                 }}>
                     <div>
-                        <figure>
+                        <figure style={{marginBottom: 0}}>
                             <img src={bridgePhoto} alt={"A picture of a bridge during a snowstorm"}/>
                         </figure>
-                        <figure style={{paddingTop: "1rem"}}>
+                        <figure style={{marginBottom: 0, paddingTop: "1rem"}}>
                             <img src={fieldPhoto} alt={"A picture of a field covered in snow"}/>
                         </figure>
                     </div>
