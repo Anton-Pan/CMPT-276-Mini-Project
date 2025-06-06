@@ -177,7 +177,7 @@ function App() {
                     justifyContent: "space-between"
                 }}>
                     <figure style={{marginRight: "2rem", marginBottom: "0rem"}}>
-                        <img src={project1Photo} alt={"A picture of me"}/>
+                        <img src={project1Photo} alt={"A screenshot of a website, showing an overview for a concert"}/>
                     </figure>
                     <section style={{marginBottom: 0}}>
                         <h6>Ticketrebel</h6>
@@ -215,7 +215,7 @@ function App() {
                     justifyContent: "space-between"
                 }}>
                     <figure style={{marginRight: "2rem", marginBottom: "0rem"}}>
-                        <img src={project2Photo} alt={"A picture of me"}/>
+                        <img src={project2Photo} alt={"A screenshot of a website, showing a map with massage information pinned to it"}/>
                     </figure>
                     <section style={{marginBottom: 0}}>
                         <h6>LastMinuteMassage</h6>
@@ -267,7 +267,7 @@ function App() {
                     </div>
                     <div>
                         <figure style={{marginBottom: 0}}>
-                            <img src={balconiesPhoto} alt={"A photo of some balconies during sunset"}/>
+                            <img src={balconiesPhoto} alt={"A photo of balconies during sunset"}/>
                         </figure>
                         <figure style={{marginBottom: 0, paddingTop: "1rem"}}>
                             <img src={trainyardPhoto} alt={"A photo of a trainyard at night"}/>
