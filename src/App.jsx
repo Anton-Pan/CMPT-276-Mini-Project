@@ -317,7 +317,7 @@ function App() {
             const currentDate = new Date;
             return (`${parseMonth(currentDate.getMonth())} ${currentDate.getDate()}, ${currentDate.getFullYear()}`)
         }
-        return (<section style={{display: "flex", alignItems: "center", justifyContent: "space-around"}}>
+        return (<section style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
             <a style={{pointerEvents: "none"}}>
                 © 2025 Anton-Pan (MIT License)
             </a>
